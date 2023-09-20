@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 
 
 const app = express();
-const PORT = 3000;
+const PORT = 8000;
 
 mongoose
 	.connect("mongodb://localhost/logicmania")
@@ -20,5 +20,5 @@ mongoose
 	});
 
 app.get('/', (req, res) => {
-  res.send('Hello, world!');
+  res.send('Finally I am up');
 });
